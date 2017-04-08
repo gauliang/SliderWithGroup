@@ -1,0 +1,37 @@
+/*----------------------------------------------------------------
+ - 焦点图 图片尺寸不限，单张图片尺寸为700 或 相邻两张图片宽度值和为700
+ - 单步滑动尺寸 700px
+ ---------------------------------------------------------------*/ 
+.focus_viewport{width:700px; margin: 0 auto; height:320px; overflow:hidden; position:relative;}
+
+/*内容主题*/
+.focus_inner{ position:relative; height:320px; width:5800px;}
+.focus_inner li{ float:left; overflow:hidden; height:320px; position:relative;}
+.focus_inner .image{width: 700px;height: 320px; float: left;}
+.focus_inner a{ width:100%; height:100%; position:absolute;overflow: hidden; display:block; top:0; left:0; z-index:10;}
+.focus_inner a em.video_80x80{top: 178px;left: 618px;z-index: 20;}
+.focus_inner a em.video_40x40{top: 216px;left: 637px;z-index: 20;}
+.focus_inner span{ width:100%; position:absolute;zoom:1;height:50px;bottom:0; z-index:5;}
+.focus_inner span.text{background:rgba(0,0,0,0.5); color: #fff; width:100%; font-size: 16px; height:30px; line-height:30px; z-index:10; padding:10px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap; cursor:pointer;}
+
+
+/*分组*/
+.focus_group{ overflow: hidden; float: left; margin: 0; padding: 0;}
+.focus_group_nav{position: absolute;right: 0;top: 10px;padding: 0;margin: 0;z-index: 50; list-style: none;}
+.focus_group_nav li{ margin-top: 2px;}
+.focus_group_nav li a{display: block;padding: 0 10px; background:#333; z-index:80;opacity:0.5;text-align:center; color:#FFF; font-size:14px; line-height:34px; text-decoration:none;}
+.focus_group_nav li a.on{background:#d33;opacity:0.9;}
+/*控制按钮*/
+.focus_nav{height:30px; margin: 5px 0; padding: 0;position:absolute; z-index:30; right:10px; bottom:0;}
+.focus_nav_bg{ width:100%; height:30px; bottom:0; position:absolute;background:#000;opacity: 0.5; z-index:5;}
+.focus_nav li{ width:10px; height:10px; float:left; cursor:pointer; margin:10px 5px; background:#FFF;border-radius:5px; text-align:center; overflow:hidden;box-shadow: 1px 1px 1px #A9A9A9 inset;}
+.focus_nav li.selected{ background:#c00;box-shadow: 1px 1px 1px #000 inset;}
+
+.image-1{background-color: #4caf50;}
+.image-2{background-color: #009688;}
+.image-3{background-color: #673ab7;}
+.image-4{background-color: #2196f3;}
+.image-5{background-color: #f44336;}
+.image-6{background-color: #3f51b5;}
+.image-7{background-color: #9c27b0;}
+.image-8{background-color: #e91e63;}
